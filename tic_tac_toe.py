@@ -1,5 +1,4 @@
 import random
-
 class Game:
 	def __init__(self):
 		self.board = [[None for i in range(3)] for j in range(3)]
@@ -63,7 +62,7 @@ class Game:
 		return True
 
 	def ai_move(self,mark):
-		cornor = [0,8,2,6]
+		cornor = [0,8,2,5]
 		for tile in cornor:
 			if self.is_empty(tile):
 				self.player_move(tile,mark)
